@@ -7,11 +7,21 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "patch-package"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.9.0",
+    "patch-package": "^8.0.0",
+    "postinstall-postinstall": "^2.1.0",
     "react": "19.0.0",
-    "react-native": "0.79.0"
+    "react-native": "0.79.0",
+    "react-native-biometrics": "^3.0.1",
+    "react-native-blob-util": "^0.22.2",
+    "react-native-pdf": "^6.7.7",
+    "react-native-version-check": "^3.5.0",
+    "react-native-version-info": "^1.1.1",
+    "react-redux": "^9.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

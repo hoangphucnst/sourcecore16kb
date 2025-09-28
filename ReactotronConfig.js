@@ -1,18 +1,20 @@
 import Reactotron from 'reactotron-react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {reactotronRedux} from 'reactotron-redux';
 
 Reactotron.setAsyncStorageHandler(AsyncStorage)
   .configure({
     name: 'React Native Demo',
-    host: 'localhost', // hoặc 10.0.2.2 nếu dùng emulator Android
   })
   .useReactNative({
     asyncStorage: true,
     networking: {ignoreUrls: /symbolicate/},
-    editor: true,
-    errors: {veto: stackFrame => false},
+    editor: {openCommand: 'code'},
+    errors: {veto: () => false},
+    overlay: false,
+    log: true,
+    storybook: false,
+    devTools: false,
   })
+  .use(reactotronRedux())
   .connect();
-
-// 👉 Đoạn này giúp bạn log từ console ra Reactotron
-console.tron = Reactotron;

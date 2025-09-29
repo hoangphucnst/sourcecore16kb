@@ -1,0 +1,12 @@
+diff --git a/node_modules/@notifee/react-native/android/src/main/java/io/invertase/notifee/NotifeeApiModule.java b/node_modules/@notifee/react-native/android/src/main/java/io/invertase/notifee/NotifeeApiModule.java
+index 40bea64..c478dbf 100644
+--- a/node_modules/@notifee/react-native/android/src/main/java/io/invertase/notifee/NotifeeApiModule.java
++++ b/node_modules/@notifee/react-native/android/src/main/java/io/invertase/notifee/NotifeeApiModule.java
+@@ -39,6 +39,7 @@ public class NotifeeApiModule extends ReactContextBaseJavaModule implements Perm
+   // This method was removed upstream in react-native 0.74+, replaced with invalidate
+   // We will leave this stub here for older react-native versions compatibility
+   // ...but it will just delegate to the new invalidate method
++  @SuppressWarnings({ "deprecation", "removal" })
+   public void onCatalystInstanceDestroy() {
+     invalidate();
+   }

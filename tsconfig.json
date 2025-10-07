@@ -1,3 +1,16 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "baseUrl": "./src",
+    "paths": {
+      "~/*": ["*"],
+      "~/assets/*": ["assets/*"],
+      "~/styles/*": ["styles/*"],
+      "~/components/*": ["components/*"],
+      "~/utils/*": ["utils/*"]
+    },
+    "moduleResolution": "bundler"
+  },
+  "include": ["src"]
 }

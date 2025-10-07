@@ -6,9 +6,18 @@
     "paths": {
       "~/*": ["*"],
       "~/assets/*": ["assets/*"],
+      "~/screens/*": ["screens/*"],
       "~/styles/*": ["styles/*"],
+      "~/routes/*": ["routes/*"],
+      "~/services/*": ["services/*"],
+      "~/hoc/*": ["hoc/*"],
+      "~/hooks/*": ["hooks/*"],
+      "~/redux/*": ["redux/*"],
+      "~/constants/*": ["constants/*"],
+      "~/app/*": ["app/*"],
       "~/components/*": ["components/*"],
-      "~/utils/*": ["utils/*"]
+      "~/utils/*": ["utils/*"],
+      "~/helper/*": ["helper/*"]
     },
     "moduleResolution": "bundler"
   },
